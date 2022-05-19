@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="homepageapi" translate="label" sortOrder="350">
+            <label>Homepage API Configuration</label>
+        </tab>
+        <section id="homepageapi" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Manage Configuration</label>
+            <tab>homepageapi</tab>
+            <resource>Dynamic_HomepageApi::config_homepageapi</resource>
+             <group id="config" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Homepage Image Section</label>
+                <field id="title1" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Title 1</label>
+                     <comment>Please enter title.</comment>
+                </field>
+                <field id="image_url1" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Image URL 1</label>
+                     <comment>Please enter image url.</comment>
+                </field>
+                <field id="title2" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Title 2</label>
+                     <comment>Please enter title.</comment>
+                </field>
+                <field id="image_url2" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Image URL 2</label>
+                     <comment>Please enter image url.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/logoList/" method="GET">
+        <service class="Dynamic\HomepageApi\Api\GetLogoList" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/bannerList/" method="POST">
+        <service class="Dynamic\HomepageApi\Api\GetHomeBanner" method="getBannerList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/imageList/" method="GET">
+        <service class="Dynamic\HomepageApi\Api\GetImage" method="getImageList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
